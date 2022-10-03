@@ -21,6 +21,8 @@ export const getMessage = (originString: string): string =>
  * @throws If the `snap_confirm` call failed.
  */
 
+const CSRNG_URL = 'https://csrng.net/csrng/csrng.php?min=0&max=1000';
+
 export const onRpcRequest: OnRpcRequestHandler = async ({
   origin,
   request,
